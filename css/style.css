@@ -54,19 +54,22 @@ li{
     text-align: center;
     vertical-align: middle;
     background-color: red;
-    height: 100px;
+    height: 120px;
 }
 
 li a{
     text-decoration: none;
     color: white;
     font-size: 2em;
+    display: block;
 }
 
 li:hover{
     background-color: rgb(44, 39, 39);
     transition: 0.5s;
 }
+
+/* MAIN */
 
 main{
     display: table;
@@ -77,8 +80,6 @@ main{
 }
 
 
-/* MAIN */
-
 section{
     display: table-cell;
     vertical-align: top;
@@ -86,9 +87,7 @@ section{
 }
 
 
-
-/*Reproductor*/
-
+/*Reproductor container izquierda*/
 .reproductor-container{
     display: table;
     margin: 40px auto;
@@ -133,8 +132,7 @@ section{
 
 
 
-/*Informacion*/
-
+/*Informacion Container Derecha*/
 .informacion-container{
     display: table;
     margin: 40px auto;
@@ -224,10 +222,15 @@ section{
     li a{
         font-size: 1.5em;
     }
+
+    li{
+        height: 75px;
+    }
  
 }
 
 @media (max-width: 700px){
+
     .header-container p{
         display: table-row;
     }
