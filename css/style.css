@@ -185,6 +185,7 @@ section{
         display: table-row;
         text-align: left;
     }
+    
 
     .informacion-container h3{
         text-align: center;
@@ -206,9 +207,20 @@ section{
         border-bottom: 2px solid red;
     }
 
+    
+    .reproductor-container video{
+        width: 800px;
+    }
+
     .informacion-container{
        width: 90%;
     }
+
+    .informacion-container img{
+        width: 500px;
+        height: 250px;
+    }
+
 
     .reproductor-container .texto-r{
         font-size: 1em;
@@ -247,6 +259,11 @@ section{
 
     li{
         height: 50px;
+    }
+
+    .informacion-container img{
+        width: 350px;
+        height: 200px;
     }
 
 }
