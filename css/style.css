@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Montserrat;
+    background-color: #393939;
+}
+
+.header-container{
+    display: table;
+    margin: 20px auto;
+}
+
+.header-container p{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 35px;
+    font-size: 2em;
+    color: white;
+}
+
+.header-container span{
+    font-family: 'RocknRoll One', sans-serif;    
+    font-size: 2em;
+    margin-right: 10px;
+    color: red;
+}
+
+.header-container img{
+    display: table-cell;
+    border-radius: 50%;
+    vertical-align: middle;
+    rotate: 90deg;
+    max-width: 100%;
+    min-width: 10%;
+}
+
+nav{
+    margin-top: 30px;
+}
+
+ul{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+li{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: red;
+    height: 100px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+li:hover{
+    background-color: rgb(44, 39, 39);
+    transition: 0.5s;
+}
+
+main{
+    display: table;
+    background-color: rgb(220, 220, 220);
+    width: 90%;
+    table-layout: fixed;
+    margin: 30px auto;
+}
+
+
+/* MAIN */
+
+section{
+    display: table-cell;
+    vertical-align: top;
+    padding: 40px;
+}
+
+
+
+/*Reproductor*/
+
+.reproductor-container{
+    display: table;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.reproductor-video{
+    margin-top: 20px;
+}
+
+.reproductor-video video{
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    max-width: 100%;
+    min-width: 10%;
+}
+
+
+.reproductor-container .texto-r{
+    margin: 20px auto;
+    text-align: justify;
+    width: 90%;
+    font-size: 1.2em;
+}
+
+.reproductor-container h3,
+.informacion-container h3{
+    display: table-caption;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.reproductor-container h3 span,
+.informacion-container h3 span
+{
+    color:red;
+    font-size: 1.3em;
+}
+
+
+
+
+/*Informacion*/
+
+.informacion-container{
+    display: table;
+    margin: 40px auto;
+    text-align: center;
+    border-bottom: 2px solid red;
+    padding: 20px 0;
+}
+
+.informacion-container img{
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    max-width: 400px;
+    min-width: 100px;
+}
+
+.informacion-container .texto-i{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.informacion-container .texto-i a{
+   color: red;
+}
+
+.informacion-container h3{
+    text-align: left;
+}
+
+
+/*Media Queries*/
+
+
+@media (max-width: 1500px){
+
+    .informacion-container{
+        padding: 0px;
+    }
+
+    .informacion-container img{
+        display: table-row;
+        vertical-align: middle;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .informacion-container .texto-i{
+        display: table-row;
+        text-align: left;
+    }
+
+    .informacion-container h3{
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 1250px){
+
+    section{
+        display: table-row;
+    }
+
+    .informacion-container{
+       width: 90%;
+    }
+
+    .reproductor-container .texto-r{
+        font-size: 1em;
+    }
+
+    .header-container p{
+        font-size: 1.5em;
+        color: white;
+    }
+
+    li a{
+        font-size: 1.5em;
+    }
+
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
