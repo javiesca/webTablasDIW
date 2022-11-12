@@ -1,18 +1,32 @@
+
+/* Reseteo de estilos*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Propiedades generales del body*/
+
 body{
     font-family: Montserrat;
     background-color: #393939;
     min-width: 580px;
 }
+
 /*Header*/
+
 .header-container{
     display: table;
     margin: 20px auto;
+}
+
+.header-container span{
+    font-family: 'RocknRoll One', sans-serif;    
+    font-size: 2em;
+    margin-right: 10px;
+    color: red;
 }
 
 .header-container p{
@@ -23,13 +37,6 @@ body{
     color: white;
 }
 
-.header-container span{
-    font-family: 'RocknRoll One', sans-serif;    
-    font-size: 2em;
-    margin-right: 10px;
-    color: red;
-}
-
 .header-container img{
     display: table-cell;
     border-radius: 50%;
@@ -38,6 +45,8 @@ body{
     max-width: 100%;
     min-width: 10%;
 }
+
+/* Nav */
 
 nav{
     margin-top: 30px;
@@ -70,13 +79,17 @@ li:hover{
 }
 
 /* Main */
+
 main{
     display: table;
     background-color: rgb(220, 220, 220);
     width: 90%;
     table-layout: fixed;
     margin: 30px auto;
+    border-radius: 15px;
 }
+
+/* Secciones */
 
 section {
     display: table-cell;
@@ -84,8 +97,8 @@ section {
     padding: 40px;
 }
 
+/*Reproductor*/
 
-/*Reproductor container izquierda*/
 .reproductor-container{
     display: table;
     margin: 40px auto;
@@ -125,8 +138,8 @@ section {
     font-size: 1.3em;
 }
 
+/*Articulos*/
 
-/*Informacion Container Derecha*/
 .informacion-container{
     display: table;
     margin: 40px auto;
@@ -158,8 +171,8 @@ section {
     text-align: left;
 }
 
-
 /*Media Queries*/
+
 @media (max-width: 1600px){
 
     .informacion-container{
